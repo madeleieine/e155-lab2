@@ -33,7 +33,7 @@ module seven_segment_display_testbench();
 	always @(negedge clk)
 		if (~reset) begin
 			if (seg !== seg_exp) begin
-				$display("Error: inputs = %b", {seg});
+				$display("Error: inputs = %b", seg);
 				$display(" outputs = %b(%b expected)", seg, seg_exp);
 				errors = errors + 1;
 			end

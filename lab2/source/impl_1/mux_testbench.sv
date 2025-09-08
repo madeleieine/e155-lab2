@@ -5,41 +5,43 @@ Testbench for mux.sv
 Madeleine Kan
 mkan@g.hmc.edu
 */
+`timescale 1ns/1ns
+
 module mux_testbench();
-	logic in0, in1, en;
-	logic out, out_exp;
-	logic [31:0] vectornum, errors;
-	logic [3:0] testvectors[10000:0];
-	mux dut(in0, in1, en, out_exp);
-	always
-		begin
-			clk=1; #5; 
-			clk=0; #5;
-		end
+	logic [3:0] in0, in1;
+	logic en;
+	logic [3:0] out;
+	logic [31:0] errors, vectornum;
+	logic [8:0] tv;
+	mux dut(in0, in1, en, out);
 	initial
 		begin
-			$readmemb("C:/Users/mkan/Documents/e155-lab1/fpga/radiant_project/source/impl_1/seg_exp.tv", testvectors);
-			vectornum=0; 
 			errors=0;
-			reset=1; #5; 
-			reset=0;
-		end
-	always @(posedge clk)
-		begin
+			vectornum=0;
+		for(tv=9'b000000000; tv<=9'b111111111; tv = tv+1) begin
 			#1;
-			{in0, in1, en} = testvectors[vectornum];
-		end
-	always @(negedge clk)
-		if (~reset) begin
-			if (seg !== seg_exp) begin
-				$display("Error: inputs = %b %b %b", {in0, in1, en});
-				$display(" outputs = %b(%b expected)", out, out_exp);
-				errors = errors + 1;
-			end
 			vectornum = vectornum + 1;
-			if (testvectors[vectornum] === 11'bx) begin
-				$display("%d tests completed with %d errors", vectornum, errors);
-				$stop;
+			in1 = tv[8:5];
+			in0 = tv[4:1];
+			en = tv[0];
+			$display("enable bit = %b", en);
+			$display("output  = %b", out);
+			if(en) begin
+				assert(out == in1) else begin
+					$display("Error: inputs = %b", tv);
+					$display(" outputs = %b(%b expected)", out, in1);
+					errors = errors + 1;
+				end
 			end
+			else begin
+				assert(out == in0) else begin
+					$display("Error: inputs = %b", tv);
+					$display(" outputs = %b(%b expected)", out, in0);
+					errors = errors + 1;
+				end
+			end		
 		end
+		$display("%d tests completed with %d errors", vectornum, errors);
+		$stop;
+	end
 endmodule
