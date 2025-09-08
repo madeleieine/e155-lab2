@@ -1,0 +1,39 @@
+----------------------------------------------------------------------
+Report for cell lab2_mk_top.TECH
+Register bits:  24 of 5280 (0.455%)
+I/O cells:      29
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        13          100.0
+                            FD1P3XZ        24          100.0
+                              HSOSC         1          100.0
+                                 IB         8          100.0
+                               LUT4        16          100.0
+                                 OB        21          100.0
+SUB MODULES
+                            counter         1
+                              demux         1
+                                mux         1
+                              TOTAL        86
+----------------------------------------------------------------------
+Report for cell mux.v1
+Instance Path : mux0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           25.0
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell counter.v1
+Instance Path : count
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13          100.0
+                            FD1P3XZ        24          100.0
+                              TOTAL        37
+----------------------------------------------------------------------
+Report for cell demux.v1
+Instance Path : demux0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         5           31.2
+                              TOTAL         5

@@ -1,0 +1,37 @@
+---------------------------------------------------
+Report for cell lab2_mk_top
+   Instance path: lab2_mk_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         44        100.0
+                               LUTGATE	         18        100.0
+                                LUTCCU	         26        100.0
+                                 IOBUF	         29        100.0
+                                PFUREG	         24        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               counter	          1        59.1
+                                 demux	          1        11.4
+                                   mux	          1         9.1
+---------------------------------------------------
+Report for cell mux
+   Instance path: lab2_mk_top/mux0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         9.1
+                               LUTGATE	          4        22.2
+---------------------------------------------------
+Report for cell counter
+   Instance path: lab2_mk_top/count
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26        59.1
+                                LUTCCU	         26        100.0
+                                PFUREG	         24        100.0
+---------------------------------------------------
+Report for cell demux
+   Instance path: lab2_mk_top/demux0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5        11.4
+                               LUTGATE	          5        27.8
