@@ -25,6 +25,8 @@ module mux_testbench();
 			in0 = tv[4:1];
 			en = tv[0];
 			$display("enable bit = %b", en);
+			$display("in0 = %b", in0);
+			$display("in1 = %b", in1);
 			$display("output  = %b", out);
 			if(en) begin
 				assert(out == in1) else begin

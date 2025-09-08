@@ -9,6 +9,12 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R0
+R1
 Z2 !s12c _opt
 R1
 R2
@@ -40,11 +46,11 @@ n@_opt
 Z11 OL;O;2024.2;79
 R3
 T_opt1
-!s110 1757317322
-VkP<<AfnZ^AS:dP1Gai;X`1
+!s110 1757317729
+VzEUF7>lGFhj;c[FEGIGZG0
 R4
 R5
-=5-00be43eaec33-68be88ca-2f4-5b54
+=8-00be43eaec33-68be8a61-24b-5b54
 R1
 R6
 R7
@@ -54,27 +60,26 @@ o-quiet -auto_acc_if_foreign -work work +acc
 R10
 n@_opt1
 R11
-R3
 vmux
 2C:\Users\mkan\Documents\GitHub\e155-lab2\lab2\source\impl_1\mux.sv
 Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z13 !s110 1757317325
+Z13 !s110 1757317702
 !i10b 1
 !s100 fn]]Kc[ko1ji@kOcG^RL21
 I^LdSLXQF=FcG:Ej?jegGH3
 S1
 R3
-w1757317238
+w1757317660
 8C:\Users\mkan\Documents\GitHub\e155-lab2\lab2\source\impl_1\mux.sv
 FC:\Users\mkan\Documents\GitHub\e155-lab2\lab2\source\impl_1\mux.sv
-!i122 19
+!i122 27
 L0 14 10
 Z14 VDg1SIo80bB@j0V0VzS_@n1
 Z15 OL;L;2024.2;79
 r1
 !s85 0
 31
-Z16 !s108 1757317325.000000
+Z16 !s108 1757317702.000000
 !s107 C:\\Users\\mkan\\Documents\\GitHub\\e155-lab2\\lab2\\source\\impl_1\\mux.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:\Users\mkan\Documents\GitHub\e155-lab2\lab2\source\impl_1\mux.sv|
 !i113 0
@@ -85,15 +90,15 @@ vmux_testbench
 R12
 R13
 !i10b 1
-!s100 lnjLRo;b^Zd4Znh27dSZ_3
-IZzfofe<DP8;V`G9;eVY;52
+!s100 4n3iJ:=Mhh<<l7:1dbPKE2
+I66>ToVVZ]_hfPnQo6AU1b3
 S1
 R3
-w1757317318
+w1757317697
 8C:\Users\mkan\Documents\GitHub\e155-lab2\lab2\source\impl_1\mux_testbench.sv
 FC:\Users\mkan\Documents\GitHub\e155-lab2\lab2\source\impl_1\mux_testbench.sv
-!i122 20
-L0 10 38
+!i122 28
+L0 10 40
 R14
 R15
 r1
