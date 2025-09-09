@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep  8 00:16:35 2025
+Tue Sep  9 01:15:08 2025
 
 
 Command: bitgen -w -gui -msgset C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/promote.xml -freq 0 lab2_impl_1.udb C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/impl_1/lab2_impl_1 

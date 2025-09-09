@@ -18,29 +18,28 @@ module mux_testbench();
 		begin
 			errors=0;
 			vectornum=0;
-		for(tv=9'b000000000; tv<=9'b111111111; tv = tv+1) begin
-			#1;
-			vectornum = vectornum + 1;
-			in1 = tv[8:5];
-			in0 = tv[4:1];
-			en = tv[0];
-			$display("enable bit = %b", en);
-			$display("in0 = %b", in0);
-			$display("in1 = %b", in1);
-			$display("output  = %b", out);
-			if (en==1'b1) begin
-				out_exp = in1;
+			for(tv=9'b000000000; tv<=9'b111111111; tv = tv+1'b1) begin
+				en = tv[0];
+				#5;
+				in1 = tv[8:5];
+				in0 = tv[4:1];
+				assign out_exp = en? in1 : in0;
+				#5;
+				assert(out == out_exp) else begin
+					$display("Error: inputs = %b", tv);
+					$display(" outputs = %b(%b expected)", out, in1);
+					errors = errors + 1;
+				end
+				if (tv == 9'b111111111) begin
+					vectornum = vectornum + 1;
+					$display("%d tests completed with %d errors", vectornum, errors);
+					$stop;
+				end
+				else begin
+					vectornum = vectornum + 1;
+				end
 			end
-			else begin
-				out_exp = in0;
-			end
-			assert(out == out_exp) else begin
-				$display("Error: inputs = %b", tv);
-				$display(" outputs = %b(%b expected)", out, in1);
-				errors = errors + 1;
-			end
+			$display("%d tests completed with %d errors", vectornum, errors);
+			$stop;
 		end
-		$display("%d tests completed with %d errors", vectornum, errors);
-		$stop;
-	end
 endmodule

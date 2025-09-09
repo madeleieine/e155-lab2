@@ -1,39 +1,39 @@
 ----------------------------------------------------------------------
 Report for cell lab2_mk_top.TECH
-Register bits:  24 of 5280 (0.455%)
+Register bits:  0 of 5280 (0.000%)
 I/O cells:      29
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        13          100.0
-                            FD1P3XZ        24          100.0
                               HSOSC         1          100.0
                                  IB         8          100.0
-                               LUT4        16          100.0
+                               LUT4        19          100.0
                                  OB        21          100.0
 SUB MODULES
-                            counter         1
-                              demux         1
+                         led_driver         1
                                 mux         1
-                              TOTAL        86
+              seven_segment_display         1
+                              TOTAL        52
+----------------------------------------------------------------------
+Report for cell led_driver.v1
+Instance Path : driver
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        19          100.0
+SUB MODULES
+                                mux         1
+              seven_segment_display         1
+                              TOTAL        21
 ----------------------------------------------------------------------
 Report for cell mux.v1
-Instance Path : mux0
+Instance Path : driver.mux0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         4           25.0
+                               LUT4         4           21.1
                               TOTAL         4
 ----------------------------------------------------------------------
-Report for cell counter.v1
-Instance Path : count
+Report for cell seven_segment_display.v1
+Instance Path : driver.display0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        13          100.0
-                            FD1P3XZ        24          100.0
-                              TOTAL        37
-----------------------------------------------------------------------
-Report for cell demux.v1
-Instance Path : demux0
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         5           31.2
-                              TOTAL         5
+                               LUT4         7           36.8
+                              TOTAL         7

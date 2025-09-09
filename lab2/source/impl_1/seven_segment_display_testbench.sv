@@ -19,7 +19,7 @@ module seven_segment_display_testbench();
 		end
 	initial
 		begin
-			$readmemb("C:/Users/mkan/Documents/e155-lab1/fpga/radiant_project/source/impl_1/seg_exp.tv", testvectors);
+			$readmemb("C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seg_exp.tv", testvectors);
 			vectornum=0; 
 			errors=0;
 			reset=1; #5; 

@@ -19,9 +19,8 @@ module lab2_mk_top(
 	output logic [6:0] seg0, seg1,
 	output logic anode0, anode1
 );
-	logic clk_div;
-	logic [3:0] s_in;
-	logic [6:0] seg_out;
+	logic clk, clk_div;
+
 	// Internal high-speed oscillator
 	HSOSC #(.CLKHF_DIV(2'b01)) // 24MHz from clk divider
 	 hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
@@ -29,18 +28,7 @@ module lab2_mk_top(
 	// Counter, changes ~2.8Hz
 	counter count(clk, clk_div);
 	
-	// Control seven-segment display common anodes
-	assign anode0 = ~clk_div;
-	assign anode1 = clk_div;
+	led_driver driver(clk, s0, s1, led, seg0, seg1, anode0, anode1);
 	
-	// Mux input 
-	mux mux0(s0, s1, clk_div, s_in);
-	// Feed input to seven_segment_display
-	seven_segment_display display0(s_in, seg_out);
-	// Demux output
-	demux demux0(seg_out, clk_div, seg0, seg1);
-	
-	// Assign LED output
-	assign led = s0 + s1;
-	
+		
 endmodule

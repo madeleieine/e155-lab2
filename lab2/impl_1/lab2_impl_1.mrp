@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Mon Sep  8 00:16:11 2025
+Mapped on: Tue Sep  9 01:14:44 2025
 
 Design Information
 ------------------
@@ -20,11 +20,11 @@ Command line:   map -i lab2_impl_1_syn.udb -o lab2_impl_1_map.udb -mp
 Design Summary
 --------------
 
-   Number of slice registers:  24 out of  5280 (<1%)
+   Number of slice registers:   0 out of  5280 (0%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            44 out of  5280 (1%)
-      Number of logic LUT4s:              18
-      Number of ripple logic:             13 (26 LUT4s)
+   Number of LUT4s:            20 out of  5280 (<1%)
+      Number of logic LUT4s:              20
+      Number of ripple logic:              0 (0 LUT4s)
    Number of IO sites used:   29 out of 39 (74%)
       Number of IO sites used for general PIO: 29
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -46,20 +46,20 @@ Design Summary
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
-   Number of Clocks:  1
-      Net clk: 13 loads, 13 rising, 0 falling (Driver: Pin
-     hf_osc.osc_inst/CLKHF)
+   Number of Clocks:  0
    Number of Clock Enables:  1
       Net VCC_net: 1 loads, 0 SLICEs
    Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
-      Net anode1_c: 11 loads
-      Net s0_c_0: 7 loads
-      Net s1_c_0: 7 loads
-      Net VCC_net: 5 loads
-      Net led_c_3_N_4: 2 loads
-      Net s0_c_3: 2 loads
-      Net s1_c_3: 2 loads
+      Net driver.s_in[0]: 7 loads
+      Net driver.s_in[1]: 7 loads
+      Net driver.s_in[2]: 7 loads
+      Net driver.s_in[3]: 7 loads
+      Net anode1_c: 6 loads
+      Net s0_c_0: 4 loads
+      Net s1_c_0: 4 loads
+      Net s0_c_1: 3 loads
+      Net s0_c_2: 3 loads
 
                                     Page 1
 
@@ -69,9 +69,7 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net seg1_c_1: 2 loads
-      Net seg1_c_2: 2 loads
-      Net seg1_c_3: 2 loads
+      Net s0_c_3: 3 loads
 
 
 
@@ -127,6 +125,8 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg1[6]             | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| seg0[0]             | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
 
@@ -136,8 +136,6 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-| seg0[0]             | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | seg0[1]             | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg0[2]             | OUTPUT    |           |       |       |           |
@@ -161,6 +159,11 @@ IO (PIO) Attributes (cont)
 | led[4]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
+Removed logic
+-------------
+
+Block hf_osc.vlo_inst was optimized away.
+
 OSC Summary
 -----------
 
@@ -168,7 +171,7 @@ OSC 1:                                 Pin/Node Value
   OSC Instance Name:                            hf_osc.osc_inst
   Power UP:                            NODE     VCC_net
   Enable Signal:                       NODE     VCC_net
-  OSC Output:                          NODE     clk
+  OSC Output:                          PIN,NODE anode1_c
   DIV Setting:                                  01
 
 ASIC Components
@@ -189,10 +192,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 67 MB
-Checksum -- map: 7a48ad419cf6442adccee3efb53d7bb2861971
-
-
-
+Checksum -- map: 6ad54114e7577aeceb3497acb541465fda3b5b5f
 
                                     Page 3
 

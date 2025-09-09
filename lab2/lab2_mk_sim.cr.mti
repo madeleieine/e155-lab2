@@ -1,0 +1,36 @@
+C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/mux_testbench.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/mux_testbench.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mux_testbench
+
+Top level modules:
+	mux_testbench
+
+} {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/mux.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/mux.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver_testbench.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver_testbench.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module led_driver_testbench
+
+Top level modules:
+	led_driver_testbench
+
+} {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seven_segment_display_testbench.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seven_segment_display_testbench.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module seven_segment_display_testbench
+
+Top level modules:
+	seven_segment_display_testbench
+
+} {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seven_segment_display.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seven_segment_display.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module seven_segment_display
+
+Top level modules:
+	seven_segment_display
+
+} {} {}}

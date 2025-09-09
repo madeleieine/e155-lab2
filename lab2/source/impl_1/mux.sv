@@ -14,10 +14,7 @@ mkan@hmc.edu
 module mux(
 	input logic [3:0] in0, [3:0] in1, 
 	input logic en,
-	output logic [3:0] out
-);
-	always_ff @(en) begin
-		if (en==1'b1) out <= in0; // was flipped before
-		else out <= in1;
-	end
+	output logic [3:0] out);
+	
+	assign out =  en ? in1 : in0;
 endmodule
