@@ -19,7 +19,8 @@ module lab2_mk_top(
 	output logic [6:0] seg0, seg1,
 	output logic anode0, anode1
 );
-	logic clk_div, s_in;
+	logic clk_div;
+	logic [3:0] s_in;
 	logic [6:0] seg_out;
 	// Internal high-speed oscillator
 	HSOSC #(.CLKHF_DIV(2'b01)) // 24MHz from clk divider

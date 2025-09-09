@@ -28,12 +28,8 @@ module mux_testbench();
 			$display("in0 = %b", in0);
 			$display("in1 = %b", in1);
 			$display("output  = %b", out);
-			if (en==1'b1) begin
-				out_exp = in1;
-			end
-			else begin
-				out_exp = in0;
-			end
+			if (en) out_exp = in1;
+			else out_exp = in0;
 			assert(out == out_exp) else begin
 				$display("Error: inputs = %b", tv);
 				$display(" outputs = %b(%b expected)", out, in1);

@@ -16,8 +16,8 @@ module mux(
 	input logic en,
 	output logic [3:0] out
 );
-	always @(en) begin
-		if (en) out <= in1;
-		else out <= in0;
+	always_ff @(en) begin
+		if (en==1'b1) out <= in0; // was flipped before
+		else out <= in1;
 	end
 endmodule
