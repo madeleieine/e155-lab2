@@ -16,7 +16,7 @@ mkan@hmc.edu
 module lab2_mk_top(
 	input logic [3:0] s0, s1,
 	output logic [4:0] led,
-	output logic [6:0] seg0, seg1,
+	output logic [6:0] seg
 	output logic anode0, anode1
 );
 	logic clk, clk_div;
@@ -28,7 +28,7 @@ module lab2_mk_top(
 	// Counter, changes ~2.8Hz
 	counter count(clk, clk_div);
 	
-	led_driver driver(clk, s0, s1, led, seg0, seg1, anode0, anode1);
+	led_driver driver(clk, s0, s1, led, seg, anode0, anode1);
 	
 		
 endmodule

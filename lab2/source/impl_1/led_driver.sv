@@ -19,7 +19,7 @@ module led_driver(
 	input logic clk,
 	input logic [3:0] s0, s1,
 	output logic [4:0] led,
-	output logic [6:0] seg0, seg1,
+	output logic [6:0] seg,
 	output logic anode0, anode1
 );
 	logic [3:0] s_in;
@@ -38,8 +38,7 @@ module led_driver(
 	assign anode1 = clk;
 	
 	// drive seven-segment displays
-	assign seg0 = seg_out;
-	assign seg1 = seg_out;
+	assign seg = seg_out;
 	
 	
 	

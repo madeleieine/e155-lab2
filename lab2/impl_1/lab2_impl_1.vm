@@ -1,65 +1,64 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2024.2.0.3.0
-// Netlist written on Tue Sep  9 01:14:33 2025
+// Netlist written on Tue Sep  9 04:33:17 2025
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/counter.sv"
 // file 1 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/lab2_mk_top.sv"
 // file 2 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/led_driver.sv"
-// file 3 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/led_driver_testbench.sv"
-// file 4 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/mux.sv"
-// file 5 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/seven_segment_display.sv"
-// file 6 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v"
-// file 7 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd"
-// file 8 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ccu2_b.v"
-// file 9 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
-// file 10 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
-// file 11 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
-// file 12 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
-// file 13 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc.v"
-// file 14 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
-// file 15 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ib.v"
-// file 16 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
-// file 17 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc.v"
-// file 18 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
-// file 19 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ob.v"
-// file 20 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/obz_b.v"
-// file 21 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
-// file 22 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/pdp4k.v"
-// file 23 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb.v"
-// file 24 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
-// file 25 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/sp256k.v"
-// file 26 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/legacy.v"
-// file 27 "c:/lscc/radiant/2024.2/ip/common/adder/rtl/lscc_adder.v"
-// file 28 "c:/lscc/radiant/2024.2/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
-// file 29 "c:/lscc/radiant/2024.2/ip/common/complex_mult/rtl/lscc_complex_mult.v"
-// file 30 "c:/lscc/radiant/2024.2/ip/common/counter/rtl/lscc_cntr.v"
-// file 31 "c:/lscc/radiant/2024.2/ip/common/fifo/rtl/lscc_fifo.v"
-// file 32 "c:/lscc/radiant/2024.2/ip/common/fifo_dc/rtl/lscc_fifo_dc.v"
-// file 33 "c:/lscc/radiant/2024.2/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
-// file 34 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
-// file 35 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
-// file 36 "c:/lscc/radiant/2024.2/ip/common/multiplier/rtl/lscc_multiplier.v"
-// file 37 "c:/lscc/radiant/2024.2/ip/common/ram_dp/rtl/lscc_ram_dp.v"
-// file 38 "c:/lscc/radiant/2024.2/ip/common/ram_dq/rtl/lscc_ram_dq.v"
-// file 39 "c:/lscc/radiant/2024.2/ip/common/rom/rtl/lscc_rom.v"
-// file 40 "c:/lscc/radiant/2024.2/ip/common/subtractor/rtl/lscc_subtractor.v"
-// file 41 "c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v"
-// file 42 "c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v"
-// file 43 "c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v"
-// file 44 "c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v"
-// file 45 "c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v"
-// file 46 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v"
-// file 47 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v"
-// file 48 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v"
-// file 49 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v"
-// file 50 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v"
-// file 51 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v"
-// file 52 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v"
-// file 53 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v"
-// file 54 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v"
-// file 55 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v"
-// file 56 "c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v"
-// file 57 "c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v"
+// file 3 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/mux.sv"
+// file 4 "c:/users/mkan/documents/github/e155-lab2/lab2/source/impl_1/seven_segment_display.sv"
+// file 5 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v"
+// file 6 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd"
+// file 7 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ccu2_b.v"
+// file 8 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
+// file 9 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
+// file 10 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
+// file 11 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
+// file 12 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc.v"
+// file 13 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
+// file 14 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ib.v"
+// file 15 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
+// file 16 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc.v"
+// file 17 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
+// file 18 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ob.v"
+// file 19 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/obz_b.v"
+// file 20 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
+// file 21 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/pdp4k.v"
+// file 22 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb.v"
+// file 23 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
+// file 24 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/sp256k.v"
+// file 25 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/legacy.v"
+// file 26 "c:/lscc/radiant/2024.2/ip/common/adder/rtl/lscc_adder.v"
+// file 27 "c:/lscc/radiant/2024.2/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
+// file 28 "c:/lscc/radiant/2024.2/ip/common/complex_mult/rtl/lscc_complex_mult.v"
+// file 29 "c:/lscc/radiant/2024.2/ip/common/counter/rtl/lscc_cntr.v"
+// file 30 "c:/lscc/radiant/2024.2/ip/common/fifo/rtl/lscc_fifo.v"
+// file 31 "c:/lscc/radiant/2024.2/ip/common/fifo_dc/rtl/lscc_fifo_dc.v"
+// file 32 "c:/lscc/radiant/2024.2/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
+// file 33 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
+// file 34 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
+// file 35 "c:/lscc/radiant/2024.2/ip/common/multiplier/rtl/lscc_multiplier.v"
+// file 36 "c:/lscc/radiant/2024.2/ip/common/ram_dp/rtl/lscc_ram_dp.v"
+// file 37 "c:/lscc/radiant/2024.2/ip/common/ram_dq/rtl/lscc_ram_dq.v"
+// file 38 "c:/lscc/radiant/2024.2/ip/common/rom/rtl/lscc_rom.v"
+// file 39 "c:/lscc/radiant/2024.2/ip/common/subtractor/rtl/lscc_subtractor.v"
+// file 40 "c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v"
+// file 41 "c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v"
+// file 42 "c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v"
+// file 43 "c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v"
+// file 44 "c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v"
+// file 45 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v"
+// file 46 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v"
+// file 47 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v"
+// file 48 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v"
+// file 49 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v"
+// file 50 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v"
+// file 51 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v"
+// file 52 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v"
+// file 53 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v"
+// file 54 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v"
+// file 55 "c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v"
+// file 56 "c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v"
 
 //
 // Verilog Description of module lab2_mk_top
@@ -150,34 +149,34 @@ module led_driver (input s0_c_0, input s1_c_0, input s1_c_1, input s0_c_1,
     
     wire led_c_2_N_6, led_c_3_N_4;
     
-    (* lut_function="(A (B (C+(D))+!B (C (D)))+!A (C (D)))", lineinfo="@2(42[15],42[22])" *) LUT4 i19_3_lut_4_lut (.A(s0_c_0), 
+    (* lut_function="(A (B (C+(D))+!B (C (D)))+!A (C (D)))", lineinfo="@2(29[15],29[22])" *) LUT4 i19_3_lut_4_lut (.A(s0_c_0), 
             .B(s1_c_0), .C(s1_c_1), .D(s0_c_1), .Z(led_c_2_N_6));
     defparam i19_3_lut_4_lut.INIT = "0xf880";
-    (* lut_function="(A (B+(C))+!A (B (C)))", lineinfo="@2(42[15],42[22])" *) LUT4 led_c_4_I_0_3_lut (.A(s0_c_3), 
+    (* lut_function="(A (B+(C))+!A (B (C)))", lineinfo="@2(29[15],29[22])" *) LUT4 led_c_4_I_0_3_lut (.A(s0_c_3), 
             .B(s1_c_3), .C(led_c_3_N_4), .Z(led_c_4));
     defparam led_c_4_I_0_3_lut.INIT = "0xe8e8";
-    (* lut_function="(A (B (C (D)+!C !(D))+!B !(C (D)+!C !(D)))+!A !(C (D)+!C !(D)))", lineinfo="@2(42[15],42[22])" *) LUT4 i2_3_lut_4_lut (.A(s0_c_0), 
+    (* lut_function="(A (B (C (D)+!C !(D))+!B !(C (D)+!C !(D)))+!A !(C (D)+!C !(D)))", lineinfo="@2(29[15],29[22])" *) LUT4 i2_3_lut_4_lut (.A(s0_c_0), 
             .B(s1_c_0), .C(s0_c_1), .D(s1_c_1), .Z(led_c_1));
     defparam i2_3_lut_4_lut.INIT = "0x8778";
-    (* lut_function="(A (B+(C))+!A (B (C)))", lineinfo="@2(42[15],42[22])" *) LUT4 i26_3_lut (.A(s0_c_2), 
+    (* lut_function="(A (B+(C))+!A (B (C)))", lineinfo="@2(29[15],29[22])" *) LUT4 i26_3_lut (.A(s0_c_2), 
             .B(s1_c_2), .C(led_c_2_N_6), .Z(led_c_3_N_4));
     defparam i26_3_lut.INIT = "0xe8e8";
-    (* lut_function="(A (B (C)+!B !(C))+!A !(B (C)+!B !(C)))", lineinfo="@2(42[15],42[22])" *) LUT4 i2_3_lut (.A(led_c_3_N_4), 
+    (* lut_function="(A (B (C)+!B !(C))+!A !(B (C)+!B !(C)))", lineinfo="@2(29[15],29[22])" *) LUT4 i2_3_lut (.A(led_c_3_N_4), 
             .B(s1_c_3), .C(s0_c_3), .Z(led_c_3));
     defparam i2_3_lut.INIT = "0x9696";
-    (* lut_function="(A (B (C)+!B !(C))+!A !(B (C)+!B !(C)))", lineinfo="@2(42[15],42[22])" *) LUT4 i2_3_lut_adj_1 (.A(led_c_2_N_6), 
+    (* lut_function="(A (B (C)+!B !(C))+!A !(B (C)+!B !(C)))", lineinfo="@2(29[15],29[22])" *) LUT4 i2_3_lut_adj_1 (.A(led_c_2_N_6), 
             .B(s1_c_2), .C(s0_c_2), .Z(led_c_2));
     defparam i2_3_lut_adj_1.INIT = "0x9696";
-    (* lut_function="(!(A (B)+!A !(B)))", lineinfo="@2(42[15],42[22])" *) LUT4 s0_c_0_I_0_2_lut (.A(s0_c_0), 
+    (* lut_function="(!(A (B)+!A !(B)))", lineinfo="@2(29[15],29[22])" *) LUT4 s0_c_0_I_0_2_lut (.A(s0_c_0), 
             .B(s1_c_0), .Z(led_c_0));
     defparam s0_c_0_I_0_2_lut.INIT = "0x6666";
-    (* lut_function="(!(A))", lineinfo="@2(34[18],34[22])" *) LUT4 anode1_c_I_0_1_lut (.A(anode1_c), 
+    (* lut_function="(!(A))", lineinfo="@2(37[18],37[22])" *) LUT4 anode1_c_I_0_1_lut (.A(anode1_c), 
             .Z(anode1_c_N_23));
     defparam anode1_c_I_0_1_lut.INIT = "0x5555";
-    (* LSE_LINE_FILE_ID=76, LSE_LCOL=6, LSE_RCOL=29, LSE_LLINE=29, LSE_RLINE=29, lineinfo="@2(29[6],29[29])" *) mux mux0 (s0_c_2, 
+    (* LSE_LINE_FILE_ID=76, LSE_LCOL=6, LSE_RCOL=29, LSE_LLINE=32, LSE_RLINE=32, lineinfo="@2(32[6],32[29])" *) mux mux0 (s0_c_2, 
             s1_c_2, anode1_c, {s_in}, s0_c_3, s1_c_3, s0_c_0, s1_c_0, 
             s0_c_1, s1_c_1);
-    (* LSE_LINE_FILE_ID=76, LSE_LCOL=24, LSE_RCOL=47, LSE_LLINE=31, LSE_RLINE=31, lineinfo="@2(31[24],31[47])" *) seven_segment_display display0 ({s_in}, 
+    (* LSE_LINE_FILE_ID=76, LSE_LCOL=24, LSE_RCOL=47, LSE_LLINE=34, LSE_RLINE=34, lineinfo="@2(34[24],34[47])" *) seven_segment_display display0 ({s_in}, 
             seg1_3, seg1_4, seg1_c, seg1_5, seg1_1, seg1_2, seg1_0);
     
 endmodule
@@ -191,16 +190,16 @@ module mux (input s0_c_2, input s1_c_2, input anode1_c, output [3:0]s_in,
             input s0_c_1, input s1_c_1);
     
     
-    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@4(19[16],19[30])" *) LUT4 s0_c_2_I_0_3_lut (.A(s0_c_2), 
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(19[16],19[30])" *) LUT4 s0_c_2_I_0_3_lut (.A(s0_c_2), 
             .B(s1_c_2), .C(anode1_c), .Z(s_in[2]));
     defparam s0_c_2_I_0_3_lut.INIT = "0xcaca";
-    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@4(19[16],19[30])" *) LUT4 s0_c_3_I_0_3_lut (.A(s0_c_3), 
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(19[16],19[30])" *) LUT4 s0_c_3_I_0_3_lut (.A(s0_c_3), 
             .B(s1_c_3), .C(anode1_c), .Z(s_in[3]));
     defparam s0_c_3_I_0_3_lut.INIT = "0xcaca";
-    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@4(19[16],19[30])" *) LUT4 s0_c_0_I_0_2_3_lut (.A(s0_c_0), 
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(19[16],19[30])" *) LUT4 s0_c_0_I_0_2_3_lut (.A(s0_c_0), 
             .B(s1_c_0), .C(anode1_c), .Z(s_in[0]));
     defparam s0_c_0_I_0_2_3_lut.INIT = "0xcaca";
-    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@4(19[16],19[30])" *) LUT4 s0_c_1_I_0_3_lut (.A(s0_c_1), 
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(19[16],19[30])" *) LUT4 s0_c_1_I_0_3_lut (.A(s0_c_1), 
             .B(s1_c_1), .C(anode1_c), .Z(s_in[1]));
     defparam s0_c_1_I_0_3_lut.INIT = "0xcaca";
     
@@ -215,25 +214,25 @@ module seven_segment_display (input [3:0]s_in, output seg1_3, output seg1_4,
             output seg1_0);
     
     
-    (* lut_function="(!(A (B+!(C))+!A (B ((D)+!C)+!B !(C+(D)))))", lineinfo="@5(16[3],35[10])" *) LUT4 seg1_3_I_0_4_lut (.A(s_in[1]), 
+    (* lut_function="(!(A (B+!(C))+!A (B ((D)+!C)+!B !(C+(D)))))", lineinfo="@4(16[3],35[10])" *) LUT4 seg1_3_I_0_4_lut (.A(s_in[1]), 
             .B(s_in[3]), .C(s_in[0]), .D(s_in[2]), .Z(seg1_3));
     defparam seg1_3_I_0_4_lut.INIT = "0x3170";
-    (* lut_function="(!(A (B+!((D)+!C))+!A !(B (C (D))+!B !(C+!(D)))))", lineinfo="@5(16[3],35[10])" *) LUT4 seg1_4_I_0_4_lut (.A(s_in[1]), 
+    (* lut_function="(!(A (B+!((D)+!C))+!A !(B (C (D))+!B !(C+!(D)))))", lineinfo="@4(16[3],35[10])" *) LUT4 seg1_4_I_0_4_lut (.A(s_in[1]), 
             .B(s_in[3]), .C(s_in[2]), .D(s_in[0]), .Z(seg1_4));
     defparam seg1_4_I_0_4_lut.INIT = "0x6302";
-    (* lut_function="(!(A (B ((D)+!C)+!B !(C (D)+!C !(D)))+!A (B+(C+!(D)))))", lineinfo="@5(16[3],35[10])" *) LUT4 seg1_c_I_0_4_lut (.A(s_in[0]), 
+    (* lut_function="(!(A (B ((D)+!C)+!B !(C (D)+!C !(D)))+!A (B+(C+!(D)))))", lineinfo="@4(16[3],35[10])" *) LUT4 seg1_c_I_0_4_lut (.A(s_in[0]), 
             .B(s_in[1]), .C(s_in[3]), .D(s_in[2]), .Z(seg1_c));
     defparam seg1_c_I_0_4_lut.INIT = "0x2182";
-    (* lut_function="(!(A ((C+!(D))+!B)+!A (B (C+(D))+!B !(C (D)+!C !(D)))))", lineinfo="@5(16[3],35[10])" *) LUT4 s_in_3__I_0_4_lut (.A(s_in[1]), 
+    (* lut_function="(!(A ((C+!(D))+!B)+!A (B (C+(D))+!B !(C (D)+!C !(D)))))", lineinfo="@4(16[3],35[10])" *) LUT4 s_in_3__I_0_4_lut (.A(s_in[1]), 
             .B(s_in[0]), .C(s_in[3]), .D(s_in[2]), .Z(seg1_5));
     defparam s_in_3__I_0_4_lut.INIT = "0x1805";
-    (* lut_function="(A (B (C (D)))+!A (B (C (D)+!C !(D))+!B (C (D))))", lineinfo="@5(16[3],35[10])" *) LUT4 seg1_1_I_0_4_lut_4_lut (.A(s_in[0]), 
+    (* lut_function="(A (B (C (D)))+!A (B (C (D)+!C !(D))+!B (C (D))))", lineinfo="@4(16[3],35[10])" *) LUT4 seg1_1_I_0_4_lut_4_lut (.A(s_in[0]), 
             .B(s_in[1]), .C(s_in[3]), .D(s_in[2]), .Z(seg1_1));
     defparam seg1_1_I_0_4_lut_4_lut.INIT = "0xd004";
-    (* lut_function="(A (B (C)+!B !(C))+!A !(B (C+!(D))+!B ((D)+!C)))", lineinfo="@5(16[3],35[10])" *) LUT4 seg1_2_I_0_3_lut_4_lut (.A(s_in[0]), 
+    (* lut_function="(A (B (C)+!B !(C))+!A !(B (C+!(D))+!B ((D)+!C)))", lineinfo="@4(16[3],35[10])" *) LUT4 seg1_2_I_0_3_lut_4_lut (.A(s_in[0]), 
             .B(s_in[1]), .C(s_in[2]), .D(s_in[3]), .Z(seg1_2));
     defparam seg1_2_I_0_3_lut_4_lut.INIT = "0x8692";
-    (* lut_function="(A (B (D)+!B !((D)+!C))+!A (B (C)+!B (C (D))))", lineinfo="@5(16[3],35[10])" *) LUT4 seg1_0_I_0_4_lut_4_lut (.A(s_in[0]), 
+    (* lut_function="(A (B (D)+!B !((D)+!C))+!A (B (C)+!B (C (D))))", lineinfo="@4(16[3],35[10])" *) LUT4 seg1_0_I_0_4_lut_4_lut (.A(s_in[0]), 
             .B(s_in[1]), .C(s_in[2]), .D(s_in[3]), .Z(seg1_0));
     defparam seg1_0_I_0_4_lut_4_lut.INIT = "0xd860";
     

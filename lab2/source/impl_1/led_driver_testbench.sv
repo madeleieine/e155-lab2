@@ -11,11 +11,11 @@ module led_driver_testbench();
 	logic clk;
 	logic [3:0] s0, s1, s_exp;
 	logic [4:0] led, led_exp;
-	logic [6:0] seg0, seg1, seg_exp;
+	logic [6:0] seg, seg_exp;
 	logic anode0, anode1, anode0_exp, anode1_exp;
 	logic [31:0] errors, vectornum;
 	logic [6:0] tv;
-	led_driver dut(clk, s0, s1, led, seg0, seg1, anode0, anode1);
+	led_driver dut(clk, s0, s1, led, seg, anode0, anode1);
 	
 	initial
 		begin
@@ -52,9 +52,9 @@ module led_driver_testbench();
 					default: seg_exp = 7'b1111111; // none
 				endcase
 				#5;
-				assert({led, seg0, seg1, anode0, anode1} === {led_exp, seg_exp, seg_exp, anode0_exp, anode1_exp}) else begin
+				assert({led, seg, anode0, anode1} === {led_exp, seg_exp, anode0_exp, anode1_exp}) else begin
 					$display("Error: clk = %b, s0 = %b, s1 = %b", clk, s0, s1);
-					$display(" outputs: (led, seg0, seg1, anode0, anode1) = %b(%b expected)", {led, seg0, seg1, anode0, anode1}, {led_exp, seg_exp, seg_exp, anode0_exp, anode1_exp});
+					$display(" outputs: (led, seg, anode0, anode1) = %b(%b expected)", {led, seg, anode0, anode1}, {led_exp, seg_exp, anode0_exp, anode1_exp});
 					errors = errors + 1;
 				end
 				if (tv == 7'b1111111) begin
