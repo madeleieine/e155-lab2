@@ -1,7 +1,7 @@
 <top name = "lab2_mk_top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "anode1"  type = "port" />
+    <clockitem name = "clk"  type = "net" />
 </clocks>
 
 <!--

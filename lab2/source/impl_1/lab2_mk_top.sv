@@ -16,7 +16,7 @@ mkan@hmc.edu
 module lab2_mk_top(
 	input logic [3:0] s0, s1,
 	output logic [4:0] led,
-	output logic [6:0] seg
+	output logic [6:0] seg,
 	output logic anode0, anode1
 );
 	logic clk, clk_div;
@@ -25,10 +25,10 @@ module lab2_mk_top(
 	HSOSC #(.CLKHF_DIV(2'b01)) // 24MHz from clk divider
 	 hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
 	
-	// Counter, changes ~2.8Hz
+	// Counter, changes ~91Hz
 	counter count(clk, clk_div);
 	
-	led_driver driver(clk, s0, s1, led, seg, anode0, anode1);
+	led_driver driver(clk_div, s0, s1, led, seg, anode0, anode1);
 	
 		
 endmodule

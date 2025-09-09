@@ -3,34 +3,45 @@ Report for cell lab2_mk_top
    Instance path: lab2_mk_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         20        100.0
+                                  LUT4	         40        100.0
                                LUTGATE	         20        100.0
-                                 IOBUF	         29        100.0
+                                LUTCCU	         20        100.0
+                                 IOBUF	         22        100.0
+                                PFUREG	         19        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            led_driver	          1        95.0
+                               counter	          1        50.0
+                            led_driver	          1        47.5
+---------------------------------------------------
+Report for cell counter
+   Instance path: lab2_mk_top/count
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20        50.0
+                                LUTCCU	         20        100.0
+                                PFUREG	         19        100.0
 ---------------------------------------------------
 Report for cell led_driver
    Instance path: lab2_mk_top/driver
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         19        95.0
+                                  LUT4	         19        47.5
                                LUTGATE	         19        95.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                                   mux	          1        20.0
-                 seven_segment_display	          1        35.0
+                                   mux	          1        10.0
+                 seven_segment_display	          1        17.5
 ---------------------------------------------------
 Report for cell mux
    Instance path: lab2_mk_top/driver/mux0
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          4        20.0
+                                  LUT4	          4        10.0
                                LUTGATE	          4        20.0
 ---------------------------------------------------
 Report for cell seven_segment_display
    Instance path: lab2_mk_top/driver/display0
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          7        35.0
+                                  LUT4	          7        17.5
                                LUTGATE	          7        35.0
