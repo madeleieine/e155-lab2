@@ -39,17 +39,17 @@
 -use_io_insertion 1
 
 -resolve_mixed_drivers 0
--path "C:/lscc/radiant/2024.2/ispfpga/ice40tp/data" "C:/Users/mkan/Documents/e155-lab2/lab2/impl_1" "C:/Users/mkan/Documents/e155-lab2/lab2"
+-path "C:/lscc/radiant/2024.2/ispfpga/ice40tp/data" "C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/impl_1" "C:/Users/mkan/Documents/GitHub/e155-lab2/lab2"
 -ver "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd"
--sver "C:/Users/mkan/Documents/e155-lab2/lab2/source/impl_1/counter.sv"
-"C:/Users/mkan/Documents/e155-lab2/lab2/source/impl_1/lab2_mk_top.sv"
-"C:/Users/mkan/Documents/e155-lab2/lab2/source/impl_1/led_driver.sv"
-"C:/Users/mkan/Documents/e155-lab2/lab2/source/impl_1/mux.sv"
-"C:/Users/mkan/Documents/e155-lab2/lab2/source/impl_1/seven_segment_display.sv"
+-sver "C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seven_segment_display.sv"
+"C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/counter.sv"
+"C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/lab2_mk_top.sv"
+"C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver.sv"
+"C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/mux.sv"
 
 
--path "C:/Users/mkan/Documents/e155-lab2/lab2"
+-path "C:/Users/mkan/Documents/GitHub/e155-lab2/lab2"
 -top lab2_mk_top
 -udb "lab2_impl_1_rtl.udb"
 -output_hdl "lab2_impl_1.vm"

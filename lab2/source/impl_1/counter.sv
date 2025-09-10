@@ -8,7 +8,7 @@ mkan@hmc.edu
 3 September, 2025
 */
 
-module counter #(parameter N = 18)
+module counter #(parameter N = 25)
 	 (input logic clk,
 	 output logic clk_div);
 	 

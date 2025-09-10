@@ -4,10 +4,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Sep  9 16:13:59 2025
+Tue Sep  9 20:23:18 2025
 
 
-Command: bitgen -w -gui -msgset C:/Users/mkan/Documents/e155-lab2/lab2/promote.xml -freq 0 lab2_impl_1.udb C:/Users/mkan/Documents/e155-lab2/lab2/impl_1/lab2_impl_1 
+Command: bitgen -w -gui -msgset C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/promote.xml -freq 0 lab2_impl_1.udb C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/impl_1/lab2_impl_1 
 
 Running DRC.
 DRC detected 0 errors and 0 warnings.
@@ -21,6 +21,6 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "C:/Users/mkan/Documents/e155-lab2/lab2/impl_1/lab2_impl_1.bin".
+Saving bit stream in "C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/impl_1/lab2_impl_1.bin".
 INFO <1081100> - Bitstream authenticated.
 Bitstream generation complete!
