@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.2/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.counter(fast) work.counter_testbench(fast) -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt4 -id 8-00be43eaec9e-68c1d79b-382-3d68 +__design_bin_path+C:/Users/mkan/Documents/GitHub/e155-lab2/lab2 +__betafsm

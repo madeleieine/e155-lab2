@@ -13,7 +13,7 @@ mkan@hmc.edu
 7 September, 2025
 */
 `timescale 1ns/1ns
-module lab2_mk_top(
+module lab2_mk_top(input logic reset,
 	input logic [3:0] s0, s1,
 	output logic [4:0] led,
 	output logic [6:0] seg,
@@ -28,7 +28,7 @@ module lab2_mk_top(
 	 hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(clk));
 	
 	// Counter, changes ~91Hz
-	counter count(clk, clk_div);
+	counter count(clk, reset, clk_div);
 	led_driver driver(clk_div, s0, s1, led_int, seg_int, anode0_int, anode1_int);
 	
 	always_ff @(posedge clk) begin

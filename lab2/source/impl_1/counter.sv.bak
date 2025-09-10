@@ -14,8 +14,8 @@ module counter #(parameter N = 17)
 	 
 	logic [N:0] counter;
 	always_ff @(posedge clk) begin
-		if (reset == 1'b1) begin // active low
-			counter <= 1'b0;
+		if (reset == 0) begin
+			counter <= 0;
 		end
 		else begin
 			counter <= counter + 1'b1;
