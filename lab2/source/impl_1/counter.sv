@@ -20,6 +20,6 @@ module counter #(parameter N = 17)
 		else begin
 			counter <= counter + 1'b1;
 		end
-		clk_div <= counter[N];
 	end
+	assign clk_div = counter[N]
 endmodule
