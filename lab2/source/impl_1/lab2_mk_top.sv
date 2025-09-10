@@ -19,7 +19,9 @@ module lab2_mk_top(
 	output logic [6:0] seg,
 	output logic anode0, anode1
 );
-	logic clk, clk_div;
+	logic clk, clk_div, anode0_int, anode1_int;
+	logic [4:0] led_int;
+	logic [6:0] seg_int;
 
 	// Internal high-speed oscillator
 	HSOSC #(.CLKHF_DIV(2'b01)) // 24MHz from clk divider
@@ -27,8 +29,14 @@ module lab2_mk_top(
 	
 	// Counter, changes ~91Hz
 	counter count(clk, clk_div);
+	led_driver driver(clk_div, s0, s1, led_int, seg_int, anode0_int, anode1_int);
 	
-	led_driver driver(clk_div, s0, s1, led, seg, anode0, anode1);
+	always_ff @(posedge clk) begin
+		anode0 <= anode0_int;
+		anode1 <= anode1_int;
+		led <= led_int;
+		seg <= seg_int;
+	end
 	
 		
 endmodule

@@ -12,12 +12,27 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	mux
 
+} {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver_testbench.sv {2 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver_testbench.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module led_driver_testbench
+** Warning: C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver_testbench.sv(27): (vlog-2697) MSB 8 of part-select into 'tv' is out of bounds.
+
+Top level modules:
+	led_driver_testbench
+
 } {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seven_segment_display_testbench.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/seven_segment_display_testbench.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module seven_segment_display_testbench
 
 Top level modules:
 	seven_segment_display_testbench
+
+} {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/counter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/counter.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module counter
+
+Top level modules:
+	counter
 
 } {} {}} C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/mkan/Documents/GitHub/e155-lab2/lab2/source/impl_1/led_driver.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024

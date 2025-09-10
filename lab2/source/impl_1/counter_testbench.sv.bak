@@ -1,0 +1,24 @@
+/*
+Testbench for counter.sv
+1 bit input, 1 bit output, output flips after 2^17 cycles of the input.
+3 September 2025
+Madeleine Kan
+mkan@g.hmc.edu
+*/
+module counter_testbench();
+	logic clk, clk_div;
+	always
+		begin
+			clk=1'b1; #5; 
+			clk=1'b0; #5;
+		end
+	counter dut(clk, clk_div);
+	initial begin
+		#5
+		assert(clk_div == 1'b0) else $display("Error: inputs = %b", clk, " outputs = %b(0 expected)", clk_div);
+		#131073; // 2^17 + 1 
+		assert(clk_div == 1'b1) else $display("Error: inputs = %b", clk, " outputs = %b(1 expected)", clk_div);
+		$display("tests completed!");
+		$stop;
+	end
+endmodule

@@ -8,7 +8,8 @@ on the binary value encoded by the state of the switches: the first four
 correspond to the first 7-segment display, and the second four switches to
 the second 7-segment display. The five LEDs represent the sum of the values 
 encoded by the two sets of four switches. Which set of switches (s0 or s1)
-are read and which 7-seg display (seg0 or seg1) depends on if clk is 0 or 1
+are read and which 7-seg display is visible (depending on anode0 and anode1)
+depends on if clk is 0 or 1
 
 Madeleine Kan
 mkan@hmc.edu

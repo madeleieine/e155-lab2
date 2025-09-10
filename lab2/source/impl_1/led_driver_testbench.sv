@@ -21,11 +21,11 @@ module led_driver_testbench();
 		begin
 			errors=0;
 			vectornum=0;
-			for(tv=7'b0000000; tv<=7'b1111111; tv = tv+1'b1) begin
+			for(tv=9'b000000000; tv<=9'b111111111; tv = tv+1'b1) begin
 				clk = tv[0];
 				#1
-				s1 = tv[6:4];
-				s0 = tv[3:1];
+				s1 = tv[8:5];
+				s0 = tv[4:1];
 				assign led_exp = s0+s1;
 				assign anode0_exp = ~clk;
 				assign anode1_exp = clk;   
